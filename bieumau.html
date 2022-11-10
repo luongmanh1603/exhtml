@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Thong tin</legend>
+            <label for="name">Ho va ten</label><br />
+            <input type="text" id="name" name="name" value="Luong Van Manh"><br />
+
+            <label for="ngaysinh">Ngay sinh</label><br />
+            <input type="text" id="ngaysinh" name="ngaysinh" value="16/03/2004"><br />
+            <input type="submit" value="Nop">
+
+        </fieldset>
+    </form><hr>
+    <form>
+        <h1>INPUT</h1>
+        <h2>Radio</h2>
+        <input type="radio" id="html" name="tenngonngu" value="HTML">
+        <label for="html" >HTML</label><br />
+        <input type="radio" id="css" name="tenngonngu" value="CSS">
+        <label for="css">CSS</label><br />
+        <input type="radio" id="java" name="tenngonngu" value="Java">
+        <label for="java">Java</label>
+        <h2>Checkbox</h2>
+        <input type="checkbox" id="html" name="tenngonngu" value="HTML">
+        <label for="html" >HTML</label><br />
+        <input type="checkbox" id="css" name="tenngonngu" value="CSS">
+        <label for="css">CSS</label><br />
+        <input type="checkbox" id="java" name="tenngonngu" value="Java">
+        <label for="java">Java</label>
+        <h1>Select</h1>
+        <label for="Que quan">
+            <select id="Que quan" name="quequan" >
+                <option value="nghean">Nghe An</option>
+                <option value="hanoi">Ha Noi</option>
+                <option value="tphcm">Ho Chi Minh</option>
+            </select>
+            <input type="submit">
+        </label>
+        <h1>Textarea</h1>
+        <textarea name="binhluan" cols="30" rows="10" ></textarea><br />
+        <input type="submit">
+        <h1>Button</h1>
+        <button type="button" onclick="alert'Luong Van Manh'">Click me!</button>
+        <h1>Datalist</h1>
+        <form>
+            <input list="room" name="room">
+            <datalist id="room">
+                <option value="601">
+                <option value="602">
+            </datalist>
+            <input type="submit">
+        </form>
+        <h1>Output</h1>
+        <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        0<input type="range" id="a" name="a" value="50">100
+         <input type="number" id="b" name="b" value="50">
+         = <output name="x" for="a b"></output>
+        </form>
+    </form>
+</body>
+</html>
